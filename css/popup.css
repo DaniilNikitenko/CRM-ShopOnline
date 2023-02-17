@@ -1,4 +1,36 @@
-.page__title {
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.popup__body {
+	min-height: 100%;
+	padding: 30px 10px;
+
+}
+
+.popup__content {
+	background: #F2F0F9;
+	max-width: 792px;
+	margin: 0 auto;
+	padding: 32px 106px 28px;
+	display: flow-root;
+	position: relative;
+}
+
+.popup__close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 20px;
+	color: #000;
+}
+
+
+.popup__title {
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 1.2;
@@ -29,20 +61,23 @@
 .form__input {
 	border-radius: 6px;
 	border: none;
-	min-height: 40px;
 	margin: 0;
+	padding: 11px;
 	width: 100%;
 	display: inline-block;
 	background: #F4F2FF;
-	flex: 1 1 auto;
+	resize: none;
+	font-size: 16px;
+	line-height: 1.125;
 }
 
 .form__discont {
 	margin-bottom: 12px;
-	display: flex;
+	position: relative;
+	padding-left: 50px;
 }
 
-.form__input_input_disabled {
+.form__input:disabled {
 	background: #EEEEEE;
 }
 
@@ -54,20 +89,17 @@
 	outline: none;
 }
 
-.form__input--textarea {
-	min-height: 112px;
-	resize: none;
-}
 
 
 
 /* checkbox */
 .form__checkbox {
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	margin-right: 10px;
 	vertical-align: middle;
 	height: 40px;
 }

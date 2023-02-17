@@ -13,38 +13,42 @@
 </head>
 
 <body class="page">
-	<div class="container">
-		<h1 class="page__title">Добавить товар</h1>
-		<form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-			<fieldset class="form__fielset">
-				<label class="form__label" for="name">Наименование</label>
-				<input class="form__input" type="text" name="name" id="name" required>
+	<div class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<a class="popup__close" href="#">x</a>
+				<h2 class="popup__title">Добавить товар</h2>
+				<form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+					<fieldset class="form__fielset">
+						<label class="form__label" for="name">Наименование</label>
+						<input class="form__input" type="text" name="name" id="name" required>
 
-				<label class="form__label" for="caterogy">Категория</label>
-				<input class="form__input" type="text" name="carerogy" id="caterogy" required>
+						<label class="form__label" for="caterogy">Категория</label>
+						<input class="form__input" type="text" name="carerogy" id="caterogy" required>
 
-				<label class="form__label" for="unit">Единицы измерения</label>
-				<input class="form__input" type="text" name="unit" id="unit" required>
+						<label class="form__label" for="unit">Единицы измерения</label>
+						<input class="form__input" type="text" name="unit" id="unit" required>
 
-				<label class="form__label" for="discont">Дисконт</label>
-				<div class="form__discont">
-					<input class="form__checkbox" type="checkbox">
-					<input class="form__input form__input_input_disabled" type="text" name="discont" id="discont"
-						required disabled>
-				</div>
+						<label class="form__label" for="discont">Дисконт</label>
+						<div class="form__discont">
+							<input class="form__checkbox" type="checkbox">
+							<input class="form__input" type="text" name="discont" id="discont" required disabled>
+						</div>
 
-				<label class="form__label" for="desc">Описание</label>
-				<textarea class="form__input form__input--textarea" name="description" id="desc" required></textarea>
+						<label class="form__label" for="desc">Описание</label>
+						<textarea class="form__input" name="description" id="desc" required rows="5"></textarea>
 
-				<label class="form__label" for="quantity">Количество</label>
-				<input class="form__input" type="number" name="quantity" id="quantity" required>
+						<label class="form__label" for="quantity">Количество</label>
+						<input class="form__input" type="number" name="quantity" id="quantity" required>
 
-				<label class="form__label" for="price">Цена</label>
-				<input class="form__input" type="text" name="price" id="price" required>
+						<label class="form__label" for="price">Цена</label>
+						<input class="form__input" type="text" name="price" id="price" required>
 
-			</fieldset>
-			<button class="form__button" type="submit">Добавить товар</button>
-		</form>
+					</fieldset>
+					<button class="form__button" type="submit">Добавить товар</button>
+				</form>
+			</div>
+		</div>
 	</div>
 </body>
 

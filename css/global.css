@@ -19,8 +19,6 @@ body {
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
 	color: #6E6893;
-	background: #F2F0F9;
-	padding-top: 32px;
 }
 
 img,
@@ -69,10 +67,4 @@ iframe {
 	width: 1px !important;
 	overflow: hidden;
 
-}
-
-.container {
-	padding: 0 30px;
-	max-width: 640px;
-	margin: 0 auto;
 }
