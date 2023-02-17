@@ -25,10 +25,9 @@
 
 .popup__close {
 	position: absolute;
-	right: 10px;
-	top: 10px;
-	font-size: 20px;
-	color: #000;
+	right: 30px;
+	top: 20px;
+	border: none;
 }
 
 
